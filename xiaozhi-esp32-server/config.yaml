@@ -1,0 +1,22 @@
+name: Xiaozhi ESP32 Server
+version: "1.0.0"
+slug: xiaozhi_esp32_server
+description: ESP32控制服务
+url: https://github.com/your-repo
+arch:
+  - amd64
+  - armv7
+  - aarch64
+startup: application
+boot: auto
+ports:
+  "8000/tcp": 8000
+volumes:
+  data: /opt/xiaozhi-esp32-server
+map:
+  - config:rw
+options:
+  log_level: info
+schema:
+  log_level: select(trace|debug|info|warning|error)|info
+image: ghcr.nju.edu.cn/xinnan-tech/xiaozhi-esp32-server{arch}:server_latest

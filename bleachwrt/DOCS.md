@@ -25,20 +25,20 @@ BleachWRT Plus 是一个基于 OpenWRT 的 Home Assistant 加载项，提供旁�
 
 | 选项              | 描述               | 默认值         | 说明                                             |
 | ----------------- | ------------------ | -------------- | ------------------------------------------------ |
-| virtual_ip        | 旁路由虚拟 IP 地址 | 192.168.68.111 | 设置为与您主网络同一网段但未被使用的 IP 地址     |
+| virtual_ip        | 旁路由虚拟 IP 地址 | 192.168.2.100 | 设置为与您主网络同一网段但未被使用的 IP 地址     |
 | netmask           | 子网掩码           | 255.255.255.0  | 通常保持默认值即可                               |
-| gateway           | 网关地址           | 192.168.68.1   | 设置为您主路由器的 IP 地址                       |
+| gateway           | 网关地址           | 192.168.2.1   | 设置为您主路由器的 IP 地址                       |
 | enable_forwarding | 是否启用 IP 转发   | true           | 启用后可实现旁路由功能                           |
 | log_level         | 日志级别           | info           | 可选值：info（基本信息）或 debug（详细调试信息） |
 
 ### 网络配置示例
 
-假设您的主路由器 IP 为 192.168.1.1，网络段为 192.168.1.0/24：
+假设您的主路由器 IP 为 192.168.2.1，网络段为 192.168.2.0/24：
 
 ```yaml
-virtual_ip: 192.168.1.111
+virtual_ip: 192.168.2.100
 netmask: 255.255.255.0
-gateway: 192.168.1.1
+gateway: 192.168.2.1
 enable_forwarding: true
 log_level: info
 ```
@@ -109,8 +109,8 @@ BleachWRT Plus 提供了丰富的功能，包括但不限于：
 # 需要在宿主机上进行下面操作
 
 #开启桥接网卡混淆模式
-ip link set end0 promisc on
+ip link set enp2s1 promisc on
 
 # 添加macvlan
-ip link add mynet link end0 type macvlan mode bridge
+docker network create -d macvlan --subnet=192.168.2.0/24 --gateway=192.168.2.1 -o parent=enp2s1 macnet
 ```

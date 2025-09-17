@@ -4,7 +4,6 @@ slug: "bleachwrt"
 description: "bleachwrt - 提供旁路由管理功能，集成WEB管理界面"
 url: "https://github.com/gky008/hassio-addons/main/bleachwrt"
 arch:
-  - aarch64
   - amd64
 startup: application
 boot: manual
@@ -37,4 +36,4 @@ schema:
   gateway: str
   enable_forwarding: bool
   log_level: list(info|debug)
-image: hub.docker.com/hou6807628/openwrt-{arch}
+image: hub.docker.com/hou6807628/openwrt

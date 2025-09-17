@@ -36,4 +36,4 @@ schema:
   gateway: str
   enable_forwarding: bool
   log_level: list(info|debug)
-image: hub.docker.com/hou6807628/openwrt
+image: hou6807628/openwrt

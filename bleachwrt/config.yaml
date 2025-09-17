@@ -8,7 +8,7 @@ arch:
 startup: application
 boot: manual
 ports:
-  88/tcp: 88
+  80/tcp: 80
 ports_description:
   88/tcp: "WEB服务端口"
 init: false
@@ -25,13 +25,13 @@ privileged:
   - SYS_NICE
   - SYS_MODULE
   - NET_RAW
-webui: "http://[HOST]:[PORT:88]/"
-watchdog: "http://[HOST]:[PORT:88]/"
+webui: "http://[HOST]:[PORT:80]/"
+watchdog: "http://[HOST]:[PORT:80]/"
 apparmor: false
 options:
-  virtual_ip: 192.168.68.111
+  virtual_ip: 192.168.2.100
   netmask: 255.255.255.0
-  gateway: 192.168.68.1
+  gateway: 192.168.2.1
   enable_forwarding: true
   log_level: "info"
 schema:

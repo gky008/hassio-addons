@@ -8,7 +8,7 @@ arch:
 startup: application
 boot: manual
 ports:
-  80/tcp: 80
+  88/tcp: 88
 ports_description:
   88/tcp: "WEB服务端口"
 init: false

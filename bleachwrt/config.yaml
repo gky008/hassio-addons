@@ -2,7 +2,7 @@ name: "BleachWRT"
 version: "20250606"
 slug: "bleachwrt"
 description: "BleachWRT - 提供旁路由管理功能，集成WEB管理界面"
-url: "https://gitcode.com/waxgourd/"
+url: "https://github.com/gky008/hassio-addons"
 arch:
   - aarch64
   - amd64

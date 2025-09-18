@@ -1,12 +1,12 @@
-# BleachWRT Plus 使用文档
+# BleachWRT HAOS 使用文档
 
 ## 简介
 
-BleachWRT Plus 是一个基于 OpenWRT 的 Home Assistant 加载项，提供旁路由功能和完整的 Web 管理界面。本加载项可以让您的 Home Assistant 设备同时作为网络旁路由使用，提供丰富的网络管理功能。
+BleachWRT haos 是一个基于 OpenWRT 的 Home Assistant 加载项，提供旁路由功能和完整的 Web 管理界面。本加载项可以让您的 Home Assistant 设备同时作为网络旁路由使用，提供丰富的网络管理功能。
 
 ## 安装前准备
 
-在安装和配置 BleachWRT Plus 之前，请确保您了解以下内容：
+在安装和配置 BleachWRT haos 之前，请确保您了解以下内容：
 
 1. 旁路由的基本工作原理
 2. 您当前网络的 IP 地址范围、网关地址和子网掩码
@@ -54,7 +54,7 @@ log_level: info
 
 ### 基本功能
 
-BleachWRT Plus 提供了丰富的功能，包括但不限于：
+BleachWRT haos 提供了丰富的功能，包括但不限于：
 
 - 网络状态监控
 - 防火墙配置

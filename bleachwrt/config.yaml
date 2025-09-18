@@ -40,4 +40,4 @@ schema:
   gateway: str
   enable_forwarding: bool
   log_level: list(info|debug)
-image: gky008/bleachwrthaos:latest
+image: gky008/bleachwrthaos

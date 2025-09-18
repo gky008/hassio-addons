@@ -7,16 +7,15 @@ arch:
   - amd64
 startup: application
 boot: manual
-init: false
+init: false  # 保留一个即可，删除了重复的init参数
 ports:
-  80/tcp: 88
+  80/tcp: 88  # 增加缩进，明确端口映射关系
 ports_description:
   88/tcp: "WEB服务端口"
-init: false
 host_network: false
 network:
   interfaces:
-    - macnet
+    - macvlan  # 修正为标准接口名 macvlan
   mode: macvlan
 privileged:
   - NET_ADMIN
@@ -40,5 +39,5 @@ schema:
   netmask: str
   gateway: str
   enable_forwarding: bool
-  log_level: list(info|debug)
+  log_level: list('info', 'debug')  # 修正列表格式，用逗号分隔选项
 image: gky008/bleachwrthaos

@@ -9,15 +9,11 @@ startup: application
 boot: manual
 init: false
 ports:
-  80/tcp: 88
+  80/tcp: 80
 ports_description:
-  88/tcp: "WEB服务端口"
+  80/tcp: "WEB服务端口"
 init: false
 host_network: false
-network:
-  interfaces:
-    - macnet
-  mode: macvlan
 privileged:
   - NET_ADMIN
   - SYS_ADMIN

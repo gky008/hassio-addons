@@ -40,4 +40,4 @@ schema:
   gateway: str
   enable_forwarding: bool
   log_level: list(info|debug)
-image: registry.cn-hangzhou.aliyuncs.com/bleachwrt/plus
+image: bleachwrthaos:latest

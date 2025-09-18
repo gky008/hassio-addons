@@ -14,6 +14,10 @@ ports_description:
   80/tcp: "WEB服务端口"
 init: false
 host_network: false
+network:
+  interfaces:
+    - enp2s1
+  mode: macvlan
 privileged:
   - NET_ADMIN
   - SYS_ADMIN
@@ -22,8 +26,8 @@ privileged:
   - SYS_NICE
   - SYS_MODULE
   - NET_RAW
-webui: "http://[HOST]:[PORT:88]/"
-watchdog: "http://[HOST]:[PORT:88]/"
+webui: "http://[HOST]:[PORT:80]/"
+watchdog: "http://[HOST]:[PORT:80]/"
 apparmor: false
 options:
   virtual_ip: 192.168.2.100

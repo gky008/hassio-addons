@@ -1,4 +1,6 @@
-# BleachWRT Plus
+# BleachWRT HAOS
+
+本声明:本加载项源于冬瓜大佬，本次修改只为学习自用，只适配个人网络，不更新不修bug，请自行安装冬瓜大佬同名加载项！
 
 适用于旁路由管理的 Home Assistant 加载项，提供完整的旁路由功能和 Web 管理界面。
 
@@ -14,7 +16,7 @@
 ## 安装方法
 
 1. 在 Home Assistant 中添加本仓库作为自定义存储库
-2. 在加载项商店中找到并安装"BleachWRT Plus"
+2. 在加载项商店中找到并安装"BleachWRT HAOS"
 3. 等待安装完成
 
 ## 配置选项

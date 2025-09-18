@@ -15,8 +15,9 @@ ports_description:
 init: false
 host_network: false
 network:
-  interfaces:
-    - macnet
+  networks:
+    macnet:
+      external: true
 privileged:
   - NET_ADMIN
   - SYS_ADMIN

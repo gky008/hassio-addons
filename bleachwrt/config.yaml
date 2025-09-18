@@ -1,8 +1,8 @@
-name: "bleachwrthaos"
+name: "bleachwrt"
 version: "latest"
-slug: "bleachwrthaos"
+slug: "bleachwrt"
 description: "bleachwrthaos - 提供旁路由管理功能，集成WEB管理界面"
-url: "https://github.com/gky008/hassio-addons/main/bleachwrthaos"
+url: "https://github.com/gky008/hassio-addons/main/bleachwrt"
 arch:
   - amd64
 startup: application

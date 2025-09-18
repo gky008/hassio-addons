@@ -1,5 +1,5 @@
 name: "bleachwrt"
-version: "latest"
+version: "latest1.0"
 slug: "bleachwrt"
 description: "bleachwrthaos - 提供旁路由管理功能，集成WEB管理界面"
 url: "https://github.com/gky008/hassio-addons/main/bleachwrt"

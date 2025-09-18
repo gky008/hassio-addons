@@ -10,6 +10,7 @@ boot: manual
 init: false
 network:
   default: false
+  hassio_network: false
   networks:
     macnet:
       external: true

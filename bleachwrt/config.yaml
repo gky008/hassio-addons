@@ -16,8 +16,7 @@ init: false
 host_network: false
 network:
   interfaces:
-    - enp2s1
-  mode: macvlan
+    - macnet
 privileged:
   - NET_ADMIN
   - SYS_ADMIN

@@ -12,8 +12,7 @@ ports:
 ports_description:
   80/tcp: "WEB服务端口"
 init: false
-host_network: true
-init: false
+host_network: false
 ports_description:
   80/tcp: "WEB服务端口"
 privileged:

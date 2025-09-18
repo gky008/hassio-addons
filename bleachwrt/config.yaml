@@ -12,10 +12,11 @@ ports:
   80/tcp: 88
 ports_description:
   88/tcp: "WEB服务端口"
+init: false
 host_network: false
 network:
   interfaces:
-    - macvlan
+    - macnet
   mode: macvlan
 privileged:
   - NET_ADMIN
@@ -25,8 +26,8 @@ privileged:
   - SYS_NICE
   - SYS_MODULE
   - NET_RAW
-webui: "http://192.168.2.100:[PORT:80]/"
-watchdog: "http://192.168.2.100:[PORT:80]/"
+webui: "http://[HOST]:[PORT:88]/"
+watchdog: "http://[HOST]:[PORT:88]/"
 apparmor: false
 options:
   virtual_ip: 192.168.2.100
@@ -39,5 +40,5 @@ schema:
   netmask: str
   gateway: str
   enable_forwarding: bool
-  log_level: list('info', 'debug')  # 修正列表格式，用逗号分隔选项
+  log_level: list(info|debug)
 image: gky008/bleachwrthaos

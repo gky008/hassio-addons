@@ -8,14 +8,15 @@ arch:
 startup: application
 boot: manual
 init: false
+network:
+  default: false
+  networks:
+    macnet:
+      external: true
 ports:
   80/tcp: 88
 ports_description:
   80/tcp: "WEB服务端口"
-init: false
-host_network: false
-hassio_network: false
-macnet_network: true
 privileged:
   - NET_ADMIN
   - SYS_ADMIN

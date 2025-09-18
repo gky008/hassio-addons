@@ -14,10 +14,8 @@ ports_description:
   80/tcp: "WEB服务端口"
 init: false
 host_network: false
-network:
-  networks:
-    macnet:
-      external: true
+hassio_network: false
+macnet_network: true
 privileged:
   - NET_ADMIN
   - SYS_ADMIN

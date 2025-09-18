@@ -7,15 +7,15 @@ arch:
   - amd64
 startup: application
 boot: manual
-init: false  # 保留一个即可，删除了重复的init参数
+init: false
 ports:
-  80/tcp: 88  # 增加缩进，明确端口映射关系
+  80/tcp: 88
 ports_description:
   88/tcp: "WEB服务端口"
 host_network: false
 network:
   interfaces:
-    - macvlan  # 修正为标准接口名 macvlan
+    - macvlan
   mode: macvlan
 privileged:
   - NET_ADMIN

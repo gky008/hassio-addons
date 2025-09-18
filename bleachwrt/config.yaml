@@ -9,7 +9,7 @@ startup: application
 boot: manual
 init: false
 ports:
-  80/tcp: 80
+  80/tcp: 88
 ports_description:
   80/tcp: "WEB服务端口"
 init: false

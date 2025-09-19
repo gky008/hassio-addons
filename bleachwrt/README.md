@@ -1,4 +1,4 @@
-# BleachWRT HAOS test1
+# BleachWRT HAOS
 
 本声明:本加载项源于冬瓜大佬，本次修改只为学习自用，只适配个人网络，不更新不修bug，请自行安装冬瓜大佬同名加载项！
 

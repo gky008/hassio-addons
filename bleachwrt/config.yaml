@@ -7,14 +7,10 @@ arch:
   - amd64
 startup: application
 boot: manual
-ports:
-  80/tcp: 88
 ports_description:
   80/tcp: "WEB服务端口"
 init: false
 host_network: false
-ports_description:
-  80/tcp: "WEB服务端口"
 privileged:
   - NET_ADMIN
   - SYS_ADMIN
@@ -23,19 +19,9 @@ privileged:
   - SYS_NICE
   - SYS_MODULE
   - NET_RAW
-webui: "http://[HOST]:[PORT:80]/"
-watchdog: "http://[HOST]:[PORT:80]/"
 apparmor: false
 options:
-  virtual_ip: 192.168.2.100
-  netmask: 255.255.255.0
-  gateway: 192.168.2.1
-  enable_forwarding: true
   log_level: "info"
 schema:
-  virtual_ip: str
-  netmask: str
-  gateway: str
-  enable_forwarding: bool
   log_level: list(info|debug)
 image: gky008/bleachwrthaos
